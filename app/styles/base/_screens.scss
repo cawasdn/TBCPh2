@@ -1,0 +1,11 @@
+$bpwsm: 640px;
+$bpwmd: 768px;
+$bpwlg: 1024px;
+$bpwxl: 1280px;
+$bpw2xl: 1536px;
+
+@mixin respondMin($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

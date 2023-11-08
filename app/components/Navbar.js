@@ -1,11 +1,20 @@
+import { GiHamburgerMenu } from 'react-icons/gi'
+
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <ul>
-        <a href='/home'>Home</a>
-        <a href='/about'>About</a>
-        <a href='/services'>Services</a>
-      </ul>
+      <nav className='navbar-box'>
+        <ul className='nav-links'>
+          <li>
+            <a href='/home'>HOME</a>
+            <a href='/home'>ABOUT US</a>
+            <a href='/home'>BRANCHES</a>
+          </li>
+        </ul>
+      </nav>
+      <div className='hamburger-menu'>
+        <GiHamburgerMenu size={40} />
+      </div>
     </div>
   )
 }
