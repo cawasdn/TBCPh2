@@ -20,9 +20,10 @@
       visibility: visible;
       ul {
         // outline: solid 1px red;
-        width: 20rem;
+        width: 25rem;
+        margin-left: 2rem;
         li > * {
-          margin-left: 20px;
+          margin-left: 1.25rem;
         }
       }
       a {

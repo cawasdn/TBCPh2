@@ -1,4 +1,72 @@
 footer {
   color: white;
   background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2rem;
+
+  @include respondMin($bpwsm) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-row: 1fr 1fr 1fr;
+    // & > * {
+    //   background-color: black;
+    // }
+  }
+
+  .footer-navigation {
+    display: none;
+
+    @include respondMin($bpwsm) {
+      display: flex;
+      flex-direction: column;
+
+      .footer-navigation-box {
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        width: 10rem;
+      }
+    }
+  }
+  .footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    & > h3 {
+      display: none;
+      @include respondMin($bpwsm) {
+        display: block;
+      }
+    }
+    & > p {
+      text-align: justify;
+      font-size: 11px;
+    }
+  }
+
+  .footer-logos {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    text-align: center;
+    @include respondMin($bpwsm) {
+      grid-column: 3/4;
+      text-align: start;
+      margin-left: 3rem;
+    }
+  }
+  .footer-line {
+    grid-column: 1/-1;
+    height: 1px;
+    padding: 0;
+    background-color: white;
+  }
 }

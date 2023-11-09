@@ -33,8 +33,10 @@
     }
 
     .header-info-box {
-      color: $primary;
       margin-top: 1rem;
+      div > * {
+        color: $primary;
+      }
       @include respondMin($bpwsm) {
         text-align: start;
         div > * + * {
