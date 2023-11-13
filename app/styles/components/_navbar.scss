@@ -32,3 +32,61 @@
     }
   }
 }
+.drawer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition-duration: 300ms;
+  .drawer-box {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    transform: translateX(0%);
+    place-content: center;
+    height: 100%;
+    width: 70%;
+    z-index: 9999;
+    transition-duration: 300ms;
+    .drawer-close {
+      position: fixed;
+      top: 1.6rem;
+      right: 1.6rem;
+    }
+  }
+  .drawer-list-box {
+    // outline: 1px solid red;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.drawer-off {
+  position: fixed;
+  transition-duration: 300ms;
+  .drawer-box {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    transform: translateX(100%);
+    place-content: center;
+    height: 100%;
+    width: 70%;
+    transition-duration: 300ms;
+    .drawer-close {
+      position: fixed;
+      top: 1.6rem;
+      right: 1.6rem;
+    }
+  }
+}

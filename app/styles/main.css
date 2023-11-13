@@ -100,6 +100,7 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
+  transition-duration: 300ms;
 }
 .drawer .drawer-box {
   position: fixed;
@@ -108,10 +109,12 @@ a {
   right: 0;
   bottom: 0;
   display: grid;
-  transform: translate(0%);
+  transform: translateX(0%);
   place-content: center;
   height: 100%;
   width: 70%;
+  z-index: 9999;
+  transition-duration: 300ms;
 }
 .drawer .drawer-box .drawer-close {
   position: fixed;
@@ -125,8 +128,27 @@ a {
   justify-content: space-around;
 }
 
-.overlay-off {
-  display: none;
+.drawer-off {
+  position: fixed;
+  transition-duration: 300ms;
+}
+.drawer-off .drawer-box {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  transform: translateX(100%);
+  place-content: center;
+  height: 100%;
+  width: 70%;
+  transition-duration: 300ms;
+}
+.drawer-off .drawer-box .drawer-close {
+  position: fixed;
+  top: 1.6rem;
+  right: 1.6rem;
 }
 
 .hero {

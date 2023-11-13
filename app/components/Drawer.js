@@ -2,8 +2,15 @@
 
 import { useState } from 'react'
 import { AiFillCloseCircle } from 'react-icons/ai'
+// import { useDispatch, useSelector } from 'react-redux'
+// import { increment } from '../redux/slice'
 
 const Drawer = () => {
+  // const open = useSelector((state) => {
+  //   state.navToggle.value
+  // })
+  // const dispatch = useDispatch()
+
   const [nav, setNav] = useState(false)
   const handleNav = () => {
     setNav(!nav)
