@@ -11,7 +11,7 @@ const Hero = () => {
           <h1>Thousands of healthy, tasty recipes from all over the world!</h1>
         </div>
         <div className='hero-info'>
-          <p>Immerse yourself in a world of endless flavor possibilities.div</p>
+          <p>Immerse yourself in a world of endless flavor possibilities.</p>
           <p>
             Come and join the Flavorist movement, where culinary artistry meets
             community!

@@ -10,7 +10,11 @@
   .navbar-box {
     visibility: hidden;
   }
+
   @include respondMin($bpwsm) {
+    .nav-links {
+      display: flex;
+    }
     .hamburger-menu {
       visibility: hidden;
     }
@@ -22,7 +26,7 @@
         // outline: solid 1px red;
         width: 25rem;
         margin-left: 2rem;
-        li > * {
+        & > * {
           margin-left: 1.25rem;
         }
       }
@@ -32,6 +36,8 @@
     }
   }
 }
+
+// mobile nav
 .drawer {
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -46,25 +52,38 @@
     top: 0;
     right: 0;
     bottom: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transform: translateX(0%);
-    place-content: center;
+    padding: 5rem 3rem;
     height: 100%;
     width: 70%;
     z-index: 9999;
     transition-duration: 300ms;
-    .drawer-close {
-      position: fixed;
-      top: 1.6rem;
-      right: 1.6rem;
-    }
+    gap: 2rem;
   }
+
   .drawer-list-box {
     // outline: 1px solid red;
-    height: 32rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    & > * {
+      color: black;
+      border: 1px solid black;
+      padding: 0.7rem 2rem;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+  .drawer-close {
+    position: fixed;
+    top: 1.6rem;
+    right: 1.6rem;
   }
 }
 
@@ -77,16 +96,40 @@
     top: 0;
     right: 0;
     bottom: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transform: translateX(100%);
-    place-content: center;
+    padding: 5rem 4rem;
     height: 100%;
     width: 70%;
+    z-index: 9999;
     transition-duration: 300ms;
-    .drawer-close {
-      position: fixed;
-      top: 1.6rem;
-      right: 1.6rem;
+    gap: 2rem;
+  }
+  .drawer-list-box {
+    // outline: 1px solid red;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & > * {
+      color: black;
+      border: 1px solid black;
+      padding: 0.7rem 2rem;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 700;
     }
   }
+  .drawer-close {
+    position: fixed;
+    top: 1.6rem;
+    right: 1.6rem;
+  }
+}
+
+.overflow-toggle {
+  overflow: hidden;
 }

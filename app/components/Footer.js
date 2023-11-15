@@ -27,10 +27,18 @@ const Footer = () => {
       <div className='footer-navigation'>
         <h3>Navigation</h3>
         <nav className='footer-navigation-box'>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Branches</li>
-          <li>Menu</li>
+          <Link href='/'>
+            <li>Home</li>
+          </Link>
+          <Link href='/aboutus'>
+            <li>About us</li>
+          </Link>
+          <Link href='/menu'>
+            <li>Menu</li>
+          </Link>
+          <Link href='/branches'>
+            <li>Branches</li>
+          </Link>
         </nav>
       </div>
       <div className='footer-line'></div>

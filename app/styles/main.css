@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -73,6 +75,9 @@ a {
   visibility: hidden;
 }
 @media (min-width: 640px) {
+  .navbar .nav-links {
+    display: flex;
+  }
   .navbar .hamburger-menu {
     visibility: hidden;
   }
@@ -85,7 +90,7 @@ a {
     width: 25rem;
     margin-left: 2rem;
   }
-  .navbar .navbar-box ul li > * {
+  .navbar .navbar-box ul > * {
     margin-left: 1.25rem;
   }
   .navbar .navbar-box a {
@@ -108,24 +113,35 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transform: translateX(0%);
-  place-content: center;
+  padding: 5rem 3rem;
   height: 100%;
   width: 70%;
   z-index: 9999;
   transition-duration: 300ms;
-}
-.drawer .drawer-box .drawer-close {
-  position: fixed;
-  top: 1.6rem;
-  right: 1.6rem;
+  gap: 2rem;
 }
 .drawer .drawer-list-box {
-  height: 32rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.drawer .drawer-list-box > * {
+  color: black;
+  border: 1px solid black;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+}
+.drawer .drawer-close {
+  position: fixed;
+  top: 1.6rem;
+  right: 1.6rem;
 }
 
 .drawer-off {
@@ -138,17 +154,39 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transform: translateX(100%);
-  place-content: center;
+  padding: 5rem 4rem;
   height: 100%;
   width: 70%;
+  z-index: 9999;
   transition-duration: 300ms;
+  gap: 2rem;
 }
-.drawer-off .drawer-box .drawer-close {
+.drawer-off .drawer-list-box {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.drawer-off .drawer-list-box > * {
+  color: black;
+  border: 1px solid black;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+}
+.drawer-off .drawer-close {
   position: fixed;
   top: 1.6rem;
   right: 1.6rem;
+}
+
+.overflow-toggle {
+  overflow: hidden;
 }
 
 .hero {
