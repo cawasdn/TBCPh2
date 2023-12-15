@@ -258,6 +258,14 @@ a {
     grid-template-columns: 1.5fr 1fr;
   }
 }
+.testimonial {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 12rem 30rem;
+}
+
 footer {
   color: white;
   background-color: #3f2107;

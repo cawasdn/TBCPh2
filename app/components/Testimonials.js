@@ -1,6 +1,6 @@
 const Testimonials = () => {
   return (
-    <section>
+    <section className='testimonial'>
       <h1 className='testimonial-title'>We Rebuild Lives</h1>
       <div className='testimonial-video-box'>
         <video className='testimonial-video' autoPlay muted loop>
