@@ -259,11 +259,17 @@ a {
   }
 }
 .testimonial {
-  display: flex;
   position: relative;
-  flex-direction: column;
-  gap: 6rem;
-  padding: 12rem 30rem;
+  outline: solid 2px red;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
 }
 
 footer {
