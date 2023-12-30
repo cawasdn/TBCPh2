@@ -267,9 +267,22 @@ a {
   }
 }
 .testimonial {
-  position: relative;
-  outline: solid 2px red;
-  height: 100vh;
+  padding: 15rem 0;
+  background-color: rgb(238, 238, 238);
+}
+
+.story {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  padding: 3rem;
+}
+@media (min-width: 768px) {
+  .story {
+    width: 75%;
+  }
 }
 
 .bg-video {

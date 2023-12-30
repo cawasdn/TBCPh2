@@ -1,7 +1,21 @@
 .testimonial {
-  position: relative;
-  outline: solid 2px red;
-  height: 100vh;
+  padding: 15rem 0;
+  background-color: rgb(238, 238, 238);
+  // position: relative;
+  // outline: solid 2px red;
+  // height: 100vh;
+}
+
+.story {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color: #000000, $alpha: 0.1);
+  background-color: white;
+  border-radius: 3px;
+  padding: 3rem;
+  @include respondMin($bpwmd) {
+    width: 75%;
+  }
 }
 
 .bg-video {
