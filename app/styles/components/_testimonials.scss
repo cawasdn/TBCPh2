@@ -1,6 +1,7 @@
 .testimonial {
   position: relative;
   outline: solid 2px red;
+  height: 100vh;
 }
 
 .bg-video {
@@ -11,9 +12,9 @@
   width: 100%;
   opacity: 0.15;
 
-  // &__content {
-  //   height: 100%;
-  //   width: 100%;
-  //   object-fit: cover;
-  // }
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

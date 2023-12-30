@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {/* <Hero /> */}
         {children}
-        {/* <Footer /> */}
+        <Footer />
         {/* </Provider> */}
       </body>
     </html>
