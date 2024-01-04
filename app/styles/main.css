@@ -23,6 +23,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -267,7 +271,7 @@ a {
   }
 }
 .testimonial {
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-color: rgb(238, 238, 238);
 }
 
@@ -277,12 +281,32 @@ a {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 3px;
-  padding: 3rem;
+  padding: 4rem 3rem;
+  padding-left: 4rem;
+  transform: skew(-12deg);
 }
 @media (min-width: 768px) {
   .story {
     width: 75%;
   }
+}
+.story > * {
+  transform: skew(12deg);
+}
+.story__shape {
+  width: 7rem;
+  height: 7rem;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-1rem) skew(12deg);
+}
+.story__img {
+  width: 100%;
+}
+.story__text {
+  transform: skew(12deg);
 }
 
 .bg-video {
