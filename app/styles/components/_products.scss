@@ -1,0 +1,29 @@
+.product-section {
+  padding: 1rem;
+
+  .products-title {
+    padding: 0 1.5rem;
+
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  text-align: center;
+  gap: 1.7rem;
+  padding: 1rem;
+
+  & > * {
+    width: 9rem;
+    border-radius: 50%;
+  }
+  &-items img {
+    width: 9rem;
+    border-radius: 50%;
+  }
+}

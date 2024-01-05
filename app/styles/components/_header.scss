@@ -38,6 +38,11 @@
         color: $primary;
       }
       @include respondMin($bpwsm) {
+        div > * {
+          font-size: 24px;
+        }
+      }
+      @include respondMin($bpwsm) {
         text-align: start;
         div > * + * {
           margin-top: 1rem;

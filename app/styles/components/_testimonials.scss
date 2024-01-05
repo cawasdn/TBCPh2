@@ -14,6 +14,7 @@
   border-radius: 3px;
   padding: 4rem 3rem;
   padding-left: 4rem;
+  margin-bottom: 3rem;
   transform: skew(-12deg);
   @include respondMin($bpwmd) {
     width: 75%;
