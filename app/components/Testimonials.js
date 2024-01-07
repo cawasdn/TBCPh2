@@ -58,12 +58,18 @@ const Testimonials = () => {
         </div>
       </div>
 
-      {/* <div className='bg-video'>
-        <video className='bg-video__content' autoPlay muted loop>
+      <div className='bg-video'>
+        <video
+          className='bg-video__content'
+          autoPlay
+          muted
+          loop
+          disableRemotePlayback
+        >
           <source src='/testimonial-bg-2.mp4' type='video/mp4' />
           Your Browser is not supported.
         </video>
-      </div> */}
+      </div>
     </section>
   )
 }
